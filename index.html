@@ -11,53 +11,7 @@
 
   <!-- Bootstrap -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-  <style type="text/css">
-    html {
-      overflow-y: scroll;
-    }
-
-    body {
-      padding-top: 0px;
-      padding-bottom: 40px;
-      font-size: 14px;
-    }
-
-    .container {
-      width: 1000px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 0px;
-      font-weight: bold;
-    }
-
-    hr {
-      margin: 0 0 5px 0;
-      border-top: 1px solid #aaa;
-    }
-
-    p {
-      margin: 0px;
-    }
-
-    a:focus {
-      outline: 0;
-    }
-
-    #news-list li {
-      margin-bottom: 10px;
-    }
-
-    #pub-list li {
-      margin-bottom: 10px;
-    }
-
-    #bibbase div[style] {
-      display: none;
-    }
-
-  </style>
+  <link href="main.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,19 +31,20 @@
 
           <!-- top box-->
           <div class="row" style="">
-            <div class="col-sm-3">
-              <img class="img-thumbnail" src="images/savvas2018.jpg"
-              data-toggle="tooltip" data-placement="left"
-              title="Carlsbad, USA, Oct 2018">
+            <div id="profile-pic-container" class="col-sm-3">
+              <img class="profile-pic img-thumbnail" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              src="images/profile/2017/socc.jpg"
+              data-content="At SoCC'17, Santa Clara, CA, USA, Sep 2017">
+
+
+
             </div>
 
             <div class="col-sm-9">
               <h2 style="margin-bottom: 5px;">Savvas Savvides, Ph.D.</h2>
 
               <div style="margin-left: 5px; margin-top: 10px">
-                Email: <span style="font-style: italic;">savvas [at] purdue [dot] edu</span> <br>
-                Office: Lawson B132
-                <br>
+                Email: <span style="font-style: italic;">savvas.savvides [at] fortanix [dot] com</span> <br>
                 <br>
                 <a href="https://www.linkedin.com/in/ssavvides/"><img style="background: #008FF0;" src="assets/img/sm-icons/linkedin/linkedin-32.png"></a>
                 &nbsp;
@@ -306,6 +261,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 
   </body>
   </html>
