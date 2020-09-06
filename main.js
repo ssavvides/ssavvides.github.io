@@ -4,8 +4,8 @@ function loadPics() {
 	const classes = "profile-pic img-thumbnail";
 	const attributes = 'data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom"';
 
-	jQuery.get(descriptions, function(data, status) {
-		const lines = data.split("\n");
+	jQuery.ajax({url: descriptions, async: false, success: function (data) {
+        const lines = data.split("\n");
 
 		// choose a non-empty random line
 		let line = "";
@@ -14,10 +14,12 @@ function loadPics() {
 			line = lines[randomIndex].trim();
 		}
 
-		let [path, descr] = line.split("\t");
+		const [path, descr] = line.split("\t");
 		const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
 		container.append(element);
-	});
+        },
+    });
+
 };
 
 $(document).ready(function() {
