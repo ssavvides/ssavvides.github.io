@@ -15,7 +15,9 @@ function loadPics() {
 	const classes = "profile-pic img-thumbnail";
 	const attributes = 'data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom"';
 
-	const [path, descr] = line.split("\t");
+	const parts = line.split("\t");
+	const path = parts[0];
+	const descr = parts[1];
 	const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
 	container.append(element);
 };
