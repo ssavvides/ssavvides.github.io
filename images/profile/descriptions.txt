@@ -1,4 +1,11 @@
 2017/socc.jpg	At SoCC'17, Santa Clara, CA, USA, Sep 2017
+
 2018/socc.jpg	At SoCC\'18, Carlsbad, CA, USA, Oct 2018
+
+2020/sandia-peak.jpg	At the peak of Sandia mountains, NM, USA, Aug 2020
+2020/petrified-forest.jpg	At Petrified Forest National Park, AZ, USA, Aug 2020
+2020/plateau-point.jpg	Plateau Point: At the end of Bright Angel trail, Grand Canyon, AZ, USA, Aug 2020
+2020/angels-landing.jpg	At the very end/top of Angel's Landing trail, Zion Park, Utah, USA, Aug 2020
+2020/badwater.jpg	At the lowest point in North America under a temperature of 126°F: Badwater Basin, Death Valley, CA, USA, Aug 2020
 2020/lembert-dome.jpg	On top of Lembert Dome, Yosemite Park, CA, USA, Aug 2020
 2020/vernal-falls.jpg	At Vernal Falls, Yosemite Park, CA, USA, Aug 2020
