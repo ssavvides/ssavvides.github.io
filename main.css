@@ -30,10 +30,6 @@ a:focus {
   outline: 0;
 }
 
-.profile-pic {
-  display: none;
-}
-
 #news-list li {
   margin-bottom: 10px;
 }
