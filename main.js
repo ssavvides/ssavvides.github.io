@@ -8,20 +8,28 @@ jQuery.fn.random = function() {
 
 function loadPics() {
 	var descriptions = "images/profile/descriptions.txt";
+	var container = $('#profile-pic-container');
+
+	const classes = "profile-pic img-thumbnail";
+	const attributes = 'data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom"';
+
 	jQuery.get(descriptions, function(data, status) {
-		alert(status);
-		var lines = data.split("\n")
+		var lines = data.split("\n");
 
 		$.each(lines, function(n, line) {
-			alert(line);
-		});
-});
+			line = line.trim();
+			if (line) {
+				var parts = line.split("\t");
+				var path = parts[0];
+				var descr = parts[1];
+				var element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
+				container.append(element);}
+			});
+	});
 };
 
 $(document).ready(function() {
 	loadPics();
-
-	$('#profile-pic-container').append('<img class="profile-pic img-thumbnail" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" src="images/profile/2018/socc.jpg" data-content="At SoCC\'18, Carlsbad, CA, USA, Oct 2018">')
 	$('.profile-pic').random().show();
 	$('[data-toggle="popover"]').popover();
 });

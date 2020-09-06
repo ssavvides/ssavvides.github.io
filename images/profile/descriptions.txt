@@ -1,1 +1,6 @@
 2017/socc.jpg	At SoCC'17, Santa Clara, CA, USA, Sep 2017
+
+2018/socc.jpg	At SoCC\'18, Carlsbad, CA, USA, Oct 2018
+
+2020/lembert-dome.jpg	On top of Lembert Dome, Yosemite Park, CA, USA, Aug 2020
+2020/vernal-falls.jpg	At Vernal Falls, Yosemite Park, CA, USA, Aug 2020
