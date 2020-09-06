@@ -3,11 +3,12 @@ function loadPics() {
 	var line = "";
 	const descriptions = "images/profile/descriptions.txt";
 	jQuery.get(descriptions, function(data, status) {
-		let lines = data.split("\n");
+		var lines = data.split("\n");
 		while(!line) {
 			let randomIndex = Math.floor(Math.random() * lines.length);
 			line = lines[randomIndex].trim();
 		}
+		alert(line);
 	});
 
 	const container = $('#profile-pic-container');
