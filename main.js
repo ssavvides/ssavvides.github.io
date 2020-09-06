@@ -20,6 +20,6 @@ async function loadPics() {
 };
 
 $(document).ready(function() {
-	await loadPics();
+	(async function() { await loadPics(); })();
 	$('[data-toggle="popover"]').popover();
 });
