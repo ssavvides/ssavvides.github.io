@@ -1,28 +1,23 @@
 function loadPics() {
-	// choose a non-empty random line
-	var line = "";
 	const descriptions = "images/profile/descriptions.txt";
-	jQuery.get(descriptions, function(data, status) {
-		alert(status);
-		const lines = data.split("\n");
-		alert(lines);
-		while(!line) {
-			let randomIndex = Math.floor(Math.random() * lines.length);
-			line = lines[randomIndex].trim();
-			alert(line);
-		}
-		alert(line);
-	});
-
 	const container = $('#profile-pic-container');
 	const classes = "profile-pic img-thumbnail";
 	const attributes = 'data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom"';
 
-	alert(line);
-	let [path, descr] = line.split("\t");
-	alert(path);
-	const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
-	container.append(element);
+	jQuery.get(descriptions, function(data, status) {
+		const lines = data.split("\n");
+
+		// choose a non-empty random line
+		let line = "";
+		while(!line) {
+			let randomIndex = Math.floor(Math.random() * lines.length);
+			line = lines[randomIndex].trim();
+		}
+
+		let [path, descr] = line.split("\t");
+		const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
+		container.append(element);
+	});
 };
 
 $(document).ready(function() {
