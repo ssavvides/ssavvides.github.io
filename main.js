@@ -1,6 +1,6 @@
 function loadPics() {
 	// choose a non-empty random line
-	let line = "";
+	var line = "";
 	const descriptions = "images/profile/descriptions.txt";
 	jQuery.get(descriptions, function(data, status) {
 		let lines = data.split("\n");
