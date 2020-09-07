@@ -18,5 +18,7 @@ function loadPics() {
 };
 
 $(document).ready(function() {
-	loadPics().done(function() { $('[data-toggle="popover"]').popover() });
+	loadPics().done(function() {
+		$('[data-toggle="popover"]').popover();
+	});
 });
