@@ -14,7 +14,7 @@ function loadPics() {
 		const [path, descr] = line.split("\t");
 		const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
 		container.append(element);
-	}).done();
+	});
 };
 
 $(document).ready(function() {
