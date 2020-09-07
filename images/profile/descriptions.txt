@@ -1,6 +1,6 @@
 2017/socc.jpg	At SoCC'17, Santa Clara, CA, USA, Sep 2017
 
-2018/socc.jpg	At SoCC\'18, Carlsbad, CA, USA, Oct 2018
+2018/socc.jpg	At SoCC'18, Carlsbad, CA, USA, Oct 2018
 
 2020/sandia-peak.jpg	At the peak of Sandia mountains, NM, USA, Aug 2020
 2020/petrified-forest.jpg	At Petrified Forest National Park, AZ, USA, Aug 2020

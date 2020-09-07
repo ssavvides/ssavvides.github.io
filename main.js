@@ -6,11 +6,14 @@ function loadPics() {
 
 	return jQuery.get(descriptions, function(data, status) {
 		const lines = data.split("\n");
+
+		// get non-empty random line
 		let line = "";
 		while(!line) {
 			let randomIndex = Math.floor(Math.random() * lines.length);
 			line = lines[randomIndex].trim();
 		}
+
 		const [path, descr] = line.split("\t");
 		const element = `<img class="${classes}" ${attributes} src="images/profile/${path}" data-content="${descr}">`
 		container.append(element);
@@ -19,6 +22,7 @@ function loadPics() {
 
 $(document).ready(function() {
 	loadPics().done(function() {
+		// setup bootstrap popovers after profile pic was set.
 		$('[data-toggle="popover"]').popover();
 	});
 });
