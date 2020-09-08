@@ -1,0 +1,62 @@
+publications:
+
+  - authors: <strong>Savvas Savvides</strong>, Seema Kumar, Julian Stephen, and Patrick Eugster
+    title: "C3PO: Cloud-based Confidentiality-preserving Continuous Query Processing"
+    link: #
+    venue: Transactions on Privacy and Security (TOPS 2021)
+    publication-date: 2021
+
+  - authors: Jethro Beekman, <strong>Savvas Savvides</strong>, Richard Searle, and Ambuj Kumar
+    title: "Confidential Computing Workflows"
+    link: #
+    venue: "US Patent LS Docket No.: 33092.21 (L0021)"
+    publication-date: 2021
+
+  - authors: <strong>Savvas Savvides</strong>, Darshika Khandelwal, and Patrick Eugster
+    title: Efficient Confidentiality-Preserving Data Analytics over Symmetrically Encrypted Datasets
+    link: https://dl.acm.org/doi/10.14778/3389133.3389144
+    venue: Proceedings of the VLDB Endowment (VLDB 2020)
+    publication-date: April 2020
+
+  - authors: Patrick Eugster, Seema Kumar, <strong>Savvas Savvides</strong>, and Julian Stephen
+    title: Ensuring Confidentiality in the Cloud of Things
+    link: https://ieeexplore.ieee.org/document/8705022
+    venue: IEEE Pervasive Computing 2019
+    publication-date: May 2019
+
+  - authors: Denis Ulybyshev, Aala Alsalem, Bharat Bhargava, <strong>Savvas Savvides</strong>, Ganapathy Mani, and Lotfi Othmane
+    title: Secure Data Communication in Autonomous V2X Systems
+    link: https://ieeexplore.ieee.org/abstract/document/8473454
+    venue: IEEE International Congress on Internet of Things (ICIOT 2018)
+    publication-date: July 2018
+
+  - authors: <strong>Savvas Savvides</strong>, Julian Stephen, Masoud Saeida, Vinai Sundaram, and Patrick Eugster
+    title: "Secure Data Types: A Simple Abstraction for Confidentiality-Preserving Data Analytics"
+    link: https://dl.acm.org/citation.cfm?id=3129256
+    venue: Proceedings of the Symposium on Cloud Computing (SoCC 2017)
+    publication-date: September 2017
+
+  - authors: Markus Hauck, <strong>Savvas Savvides</strong>, Patrick Eugster, Mira Mezini, and Guido Salvaneschi
+    title: "SecureScala: Scala embedding of secure computations"
+    link: https://dl.acm.org/citation.cfm?id=2998403
+    venue: Proceedings of the 7th ACM SIGPLAN Symposium on Scala (SCALA 2016)
+    publication-date: Octomber 2016
+
+  - authors: Julian Stephen, <strong>Savvas Savvides</strong>, Vinai Sundaram, Masoud Saeida, and Patrick Eugster
+    title: "STYX: Stream Processing with Trustworthy Cloud-based Execution"
+    link: https://dl.acm.org/citation.cfm?id=2987574
+    venue: Proceedings of the Symposium on Cloud Computing (SoCC 2016)
+    publication-date: Octomber 2016
+
+  - authors: Julian Stephen, <strong>Savvas Savvides</strong>, Russell Seidel, and Patrick Eugster
+    title: Program Analysis for Secure Big Data Processing
+    link: https://dl.acm.org/citation.cfm?id=2643006
+    venue: Proceedings of the 29th ACM/IEEE international conference on Automated software engineering (ASE 2014)
+    publication-date: September 2014
+
+  - authors: Julian Stephen, <strong>Savvas Savvides</strong>, Russell Seidel, and Patrick Eugster
+    title: Practical Confidentiality Preserving Big Data Analysis
+    link: https://dl.acm.org/citation.cfm?id=2696545
+    venue: Proceedings of the 6th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 2014)
+    publication-date: June 2014
+

@@ -1,0 +1,20 @@
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="card-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h4 class="post-meta">{{ page.summary }}</h4>
+    <p class="post-summary">
+      Posted by: {{ site.author }}
+      on
+      <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    </p>
+    <div class="post-categories">
+      {% if post %} {% assign categories = post.categories %} {% else %} {%
+      assign categories = page.categories %} {% endif %} Categories: {% for
+      category in categories %}
+      <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
+    </div>
+  </div>
+
+  <div class="card-body" itemprop="articleBody"> {{ content }}</div>
+</article>
