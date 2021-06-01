@@ -106,3 +106,10 @@ The velvet software package is fairly old and not very well maintained. At the t
 the latest commit in https://github.com/dzerbino/velvet was on Aug 15th, 2014. A major drawback
 of de novo genome assemblers, including but not specific to `velvet`, is that they require a lot
 of memory.
+
+
+### Resources
+
+* https://github.com/dzerbino/velvet
+* https://www.ebi.ac.uk/~zerbino/velvet/
+* https://holtlab.net/tag/velvet/
