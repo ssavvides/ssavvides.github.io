@@ -1,8 +1,14 @@
 <div class="col-lg-4">
   <div class="card">
-    <div class="card-header">Categories</div>
+    <div class="card-header">Blog categories</div>
     <div class="card-body text-dark">
-      {%- include blog_categories.html -%}
+      {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+      {% assign sortedcategories = categories | split:',' | sort %}
+      {% for category in sortedcategories %}
+      <li class="tag-head">
+        <a href="{% link categories.html %}#{{ category | slugify }}">{{ category }}</a>
+      </li>
+      {% endfor %}
     </div>
   </div>
 </div>

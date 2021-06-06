@@ -4,8 +4,7 @@ title:  "Experimenting with the velvet genome assembly software package"
 date: '2021-05-31'
 category:
     - docker
-    - genome
-    - assembler
+    - genome assembler
 permalink: /blog/experimenting-with-velvet-genome-assembler/
 ---
 
@@ -15,7 +14,7 @@ permalink: /blog/experimenting-with-velvet-genome-assembler/
 A de Bruijn graph is a compact representation based on short words (k-mers) that is ideal for high coverage,
 very short read (25–50 bp) data sets. `velvet` works with short reads and produce contigs of significant length.
 
-`velvet` is available on [github](https://github.com/dzerbino/velvet)
+`velvet` is available on [github](https://github.com/dzerbino/velvet).
 
 To learn more about `velvet` you can read the associated
 [paper](https://genome.cshlp.org/content/18/5/821.short).

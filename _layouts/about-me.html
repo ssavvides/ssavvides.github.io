@@ -52,7 +52,7 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
-        <p class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}
+        <p class="card-subtitle mb-2 text-muted"> &mdash; {{ post.date | date: "%b %-d, %Y" }}
         </p>
         {% endfor %}
       </div>

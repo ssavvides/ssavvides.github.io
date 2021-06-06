@@ -3,8 +3,7 @@ layout: post
 title:  "Understanding the basics of genome assembly"
 date: '2021-05-23'
 category:
-    - genome
-    - assembler
+    - genome assembler
 permalink: /blog/understanding-the-basics-of-genome-assembly/
 ---
 
