@@ -5,7 +5,7 @@ date: '2021-07-05'
 category:
     - hiking
     - mt diablo
-permalink: /blog/understanding-the-basics-of-genome-assembly/
+permalink: /blog/mt-diablo-hike/
 ---
 
 The day after the 4th of July, I went for a hike to Mt. Diablo, California.
