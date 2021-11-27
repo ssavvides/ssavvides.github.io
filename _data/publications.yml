@@ -2,7 +2,7 @@ publications:
 
   - authors: <strong>Savvas Savvides</strong>, Seema Kumar, Julian Stephen, and Patrick Eugster
     title: "C3PO: Cloud-based Confidentiality-preserving Continuous Query Processing"
-    link: #
+    link: https://dl.acm.org/doi/abs/10.1145/3472717
     venue: Transactions on Privacy and Security (TOPS 2021)
     publication-date: 2021
 
@@ -59,4 +59,3 @@ publications:
     link: https://dl.acm.org/citation.cfm?id=2696545
     venue: Proceedings of the 6th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 2014)
     publication-date: June 2014
-
