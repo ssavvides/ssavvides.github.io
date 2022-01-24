@@ -1,4 +1,4 @@
-_---
+---
 layout: post
 title:  "An exploration of the snowflake data warehouse"
 date: '2022-01-22'
@@ -27,7 +27,7 @@ You can follow the instructions here to install the connector:
 
 The basic steps are:
 
-1. Install the python package
+A. Install the python package
 
 If you want to use snowflake with pandas use
 
@@ -41,7 +41,7 @@ else
 pip install snowflake-connector-python
 ```
 
-2. Verify connector works by running
+B. Verify connector works by running
 
 ```python
 import snowflake.connector
@@ -80,9 +80,9 @@ entire `https://hu66291.us-east-1.aws.snowflakecomputing.com` you will get an er
 import snowflake.connector
 
 with snowflake.connector.connect(
-        user='<user>',
+        user='<user_name>',
         password='<password>',
-        account='<account>',
+        account='<account_identifier>',
         database='<database>',
         schema='<schema>',
         validate_default_parameters=True
