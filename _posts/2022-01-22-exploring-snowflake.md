@@ -1,4 +1,4 @@
----
+_---
 layout: post
 title:  "An exploration of the snowflake data warehouse"
 date: '2022-01-22'
@@ -22,7 +22,8 @@ Snowflake is a data warehouse tool.
 
 #### Install snowflake connector
 
-You can follow the instructions here to install the connector: https://docs.snowflake.com/en/user-guide/python-connector-install.html
+You can follow the instructions here to install the connector:
+[Install python snowflake connector](https://docs.snowflake.com/en/user-guide/python-connector-install.html)
 
 The basic steps are:
 
@@ -69,23 +70,24 @@ The tricky part is the `<account_identifier>` which you can get as follows:
 3. Copy the _entire_ Locator URL (e.g., `https://hu66291.us-east-1.aws.snowflakecomputing.com`) and 
 remove the protocol and the snowflake domain to get the required account identifier (e.g., `hu66291.us-east-1.aws`)
 
-If you only use `hu66291` `snowflake.connector.connect` function hangs. If you use the
+If you only use `hu66291` then the `snowflake.connector.connect` function hangs. If you use the
 entire `https://hu66291.us-east-1.aws.snowflakecomputing.com` you will get an error.
 
 
-#### Load a snowflake table into a panda dataframe
+#### Load a snowflake table into a pandas dataframe
 
 ```python
 import snowflake.connector
 
 with snowflake.connector.connect(
-        user=user,
-        password=password,
-        account=account,
-        database=database,
-        schema=schema,
+        user='<user>',
+        password='<password>',
+        account='<account>',
+        database='<database>',
+        schema='<schema>',
         validate_default_parameters=True
 ) as snowflake_connection:
+    table = '<table>'
     sql_query = f"SELECT * from {table}"
     df = snowflake_connection.cursor().execute(sql_query).fetch_pandas_all()
 ```
