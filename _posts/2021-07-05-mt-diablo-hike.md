@@ -4,7 +4,6 @@ title:  "Mt Diablo Summit Trailhead to Staircase Trail Summit Trail Junction Hik
 date: '2021-07-05'
 category:
     - hiking
-    - mt diablo
 permalink: /blog/mt-diablo-hike/
 ---
 

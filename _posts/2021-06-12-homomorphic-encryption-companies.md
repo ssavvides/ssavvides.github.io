@@ -4,7 +4,6 @@ title:  "A Review of Homomorphic Encryption Companies"
 date: '2021-06-12'
 category:
     - homomorphic encryption
-    - companies
     - privacy enhancing technologies
 permalink: /blog/homomorphic-encryption-companies/
 ---

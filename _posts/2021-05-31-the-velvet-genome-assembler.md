@@ -5,7 +5,6 @@ date: '2021-05-31'
 category:
     - docker
     - genome assembler
-    - velvet
 permalink: /blog/experimenting-with-velvet-genome-assembler/
 ---
 

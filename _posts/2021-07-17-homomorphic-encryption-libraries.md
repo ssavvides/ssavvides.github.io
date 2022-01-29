@@ -4,6 +4,7 @@ title:  "Homomorphic Encryption Libraries"
 date: '2021-07-17'
 category:
     - homomorphic encryption
+    - privacy enhancing technologies
 permalink: /blog/homomorphic-encryption-libraries/
 ---
 

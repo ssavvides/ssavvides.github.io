@@ -4,6 +4,7 @@ title:  "Homomorphic Encryption Overview"
 date: '2020-08-08'
 category:
     - homomorphic encryption
+    - privacy enhancing technologies
 permalink: /blog/homomorphic-encryption-overview/
 ---
 

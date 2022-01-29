@@ -9,6 +9,9 @@ permalink: /blog/rust-traits/
 
 ## Overview
 
+This blog post is about `trait`s in rust and what they are used for. A brief explanation of the
+most commonly used traits is also included.
+
 - A rust `trait` a way to define shared behavior in Rust. Ir is a collection of methods defined for an unknown
   type `Self`.
 - Traits resemble the concept of `interface`s defined in other languages.
@@ -76,11 +79,65 @@ fn impl_trait(n: u8) -> impl Debug {
 }
 ```
 
+## Combining and chaining `trait`s
+
+```rust
+trait Person {
+    fn name(&self) -> String;
+}
+
+// Person is a supertrait of Student.
+// Implementing Student requires you to also impl Person.
+trait Student: Person {
+    fn university(&self) -> String;
+}
+
+trait Programmer {
+    fn fav_language(&self) -> String;
+}
+
+// CompSciStudent (computer science student) is a subtrait of both Programmer 
+// and Student. Implementing CompSciStudent requires you to impl both supertraits.
+trait CompSciStudent: Programmer + Student {
+    fn git_username(&self) -> String;
+}
+
+fn comp_sci_student_greeting(student: &dyn CompSciStudent) -> String {
+    format!(
+        "My name is {} and I attend {}. My favorite language is {}. My Git username is {}",
+        student.name(),
+        student.university(),
+        student.fav_language(),
+        student.git_username()
+    )
+}
+```
+
+### References
+
+- https://doc.rust-lang.org/rust-by-example/trait/supertraits.html
+
 ---
 
 ## The `Deref` trait
 
 `Deref` is used to customize the behavior of dereference operator `*`.
+
+```rust
+pub struct MyId(pub [u8; MyId::LEN]);
+
+impl MyId {
+    pub const LEN: usize = 32;
+}
+
+impl Deref for MyId {
+    type Target = [u8; Self::LEN];
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+```
 
 Rust oftentimes performs dereferencing implicitly in a process called `Deref coercion` which
 has some very attractive consequences such as:
@@ -89,7 +146,7 @@ has some very attractive consequences such as:
 
 fn main() {
     let a = vec![1, 2, 3];
-    // len is defined on the underlying slice, but it's called "directly" on vec due to
+    // len is defined on the underlying slice, but it's called seemingly "directly" on vec due to
     // implicit conversion, aka, "Deref coercion"
     assert_eq!(a.len(), 3);
 }
@@ -108,6 +165,42 @@ fn main() {
 
 - https://doc.rust-lang.org/std/ops/trait.Deref.html
 - https://dev.to/zhanghandong/rust-concept-clarification-deref-vs-asref-vs-borrow-vs-cow-13g6
+
+
+---
+
+## The `Drop` trait
+
+`Drop` is used to customize the behavior of freeing resources that the implementor instance owns.
+
+```rust
+struct Droppable {
+    name: &'static str,
+}
+
+impl Drop for Droppable {
+    fn drop(&mut self) {
+        println!("> Dropping {}", self.name);
+    }
+}
+```
+
+---
+
+## Other useful traits
+
+- `Clone`, mostly derived used `#[derive(Clone)]`
+- Copy
+- Display
+- Eq
+- PartialEq
+- Ord
+- PartialOrd
+- FromStr
+- From
+- Into
+- AsRef
+- Iterator
 
 
 ## References
