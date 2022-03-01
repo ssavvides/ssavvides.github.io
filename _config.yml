@@ -1,6 +1,6 @@
 title: Savvas Savvides, Ph.D.
-subtitle: Software Engineer, Fortanix
-subtitle2: Adjunct Researcher, Università della Svizzera italiana
+subtitle: Software Engineer
+# subtitle2: Adjunct Researcher, Università della Svizzera italiana
 description: >- # this means to ignore newlines until "baseurl:"
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
@@ -10,10 +10,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
 - text: About
   url: /
-- text: Publications
-  url: /publications
 - text: Blog
   url: /blog
+- text: Publications
+  url: /publications
 #- text: Gallery
 #  url: /gallery
 
@@ -22,8 +22,9 @@ urls:
 
 author: Savvas Savvides
 author_logo: profile.png
-author_email: "savvas [at] fortanix [dot] com"
-author_location: Mountain View, California
+# author_email: "savvas [at] fortanix [dot] com"
+# author_location: Mountain View, California
+author_location: Nicosia, Cyprus
 author_website_url: "https://ssavvides.github.io/"
 
 # social links

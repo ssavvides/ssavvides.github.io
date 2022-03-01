@@ -8,15 +8,15 @@ layout: default
         <a href="/">
           <img class="profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}"/>
         </a>
-        <h1 class="profile-name">{{ site.title }}</h1>
+        <h2 class="profile-name">{{ site.title }}</h2>
         <p class="profile-bio">{{ site.subtitle }}</p>
-        <p class="profile-bio">{{ site.subtitle2 }}</p>
+<!--        <p class="profile-bio">{{ site.subtitle2 }}</p>-->
 
         <p class="profile-links">
           {% if site.twitter_username %}
           <a
                   class="social-link"
-                  href="http://twitter.com/{{ site.twitter_username }}"
+                  href="https://twitter.com/{{ site.twitter_username }}"
           >
             <i class="fab fa-twitter"></i>
           </a>
@@ -24,7 +24,7 @@ layout: default
           {% if site.github_username %}
           <a
                   class="social-link"
-                  href="http://github.com/{{ site.github_username }}"
+                  href="https://github.com/{{ site.github_username }}"
           >
             <i class="fab fa-github"></i>
           </a>
@@ -69,7 +69,7 @@ layout: default
         {%- include author_news.html -%}
       </div>
       <div class="card">
-        <h1 class="card-title">Recent publications</h1>
+        <h1 class="card-title">Select publications</h1>
         <ul>
           {% for publication in site.data.publications.publications limit:3 %}
           <li style="margin-bottom: 8px;">
