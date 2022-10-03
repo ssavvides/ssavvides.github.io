@@ -5,7 +5,7 @@ gem 'bundler', '~> 2.3.8'
 gem 'kramdown'
 gem 'rack-jekyll'
 gem 'rack', '>= 2.2.3.1'
-gem 'puma'
+gem 'puma', '>= 5.6.4'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -27,7 +27,7 @@ end
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
-  gem "tzinfo", "~> 1.2"
+  gem "tzinfo", "> 1.2.10"
   gem "tzinfo-data"
 end
 
