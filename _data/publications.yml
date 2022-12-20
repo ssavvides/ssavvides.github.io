@@ -1,16 +1,16 @@
 publications:
 
-  - authors: <strong>Savvas Savvides</strong>, Seema Kumar, Julian Stephen, and Patrick Eugster
-    title: "C3PO: Cloud-based Confidentiality-preserving Continuous Query Processing"
-    link: https://dl.acm.org/doi/abs/10.1145/3472717
-    venue: Transactions on Privacy and Security (TOPS 2021)
-    publication-date: 2021
-
   - authors: Jethro Beekman, <strong>Savvas Savvides</strong>, Richard Searle, and Ambuj Kumar
     title: "Confidential Computing Workflows"
     link: https://patents.google.com/patent/US11481515B2
     venue: "U.S. Patent: 11,481,515"
     publication-date: October 2022
+
+  - authors: <strong>Savvas Savvides</strong>, Seema Kumar, Julian Stephen, and Patrick Eugster
+    title: "C3PO: Cloud-based Confidentiality-preserving Continuous Query Processing"
+    link: https://dl.acm.org/doi/abs/10.1145/3472717
+    venue: Transactions on Privacy and Security (TOPS 2021)
+    publication-date: 2021
 
   - authors: <strong>Savvas Savvides</strong>, Darshika Khandelwal, and Patrick Eugster
     title: Efficient Confidentiality-Preserving Data Analytics over Symmetrically Encrypted Datasets
