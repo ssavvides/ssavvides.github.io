@@ -8,9 +8,9 @@ publications:
 
   - authors: Jethro Beekman, <strong>Savvas Savvides</strong>, Richard Searle, and Ambuj Kumar
     title: "Confidential Computing Workflows"
-    link: #
-    venue: "US Patent LS Docket No.: 33092.21 (L0021)"
-    publication-date: 2021
+    link: https://patents.google.com/patent/US11481515B2
+    venue: "U.S. Patent: 11,481,515"
+    publication-date: October 2022
 
   - authors: <strong>Savvas Savvides</strong>, Darshika Khandelwal, and Patrick Eugster
     title: Efficient Confidentiality-Preserving Data Analytics over Symmetrically Encrypted Datasets
