@@ -3,6 +3,7 @@ layout: post
 title:  "Configuring Atlassian services to dark mode for Firefox"
 date: '2022-01-30'
 category:
+    - configuration
     - atlassian
 permalink: /blog/atlassian-dark-mode/
 ---
