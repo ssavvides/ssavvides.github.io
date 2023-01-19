@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'jekyll', '~> 4.2', '>= 4.1.1'
-gem 'bundler', '~> 2.3.8'
+gem 'bundler', '~> 2.4.3'
 gem 'kramdown'
 gem 'rack-jekyll'
 gem 'rack', '>= 2.2.3.1'
@@ -19,7 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-gist', '~> 1.5.0'
     gem 'jekyll-seo-tag', '~> 2.6.1'
     gem 'jekyll-sitemap', '~> 1.4.0'
-    gem 'jekyll-menus', '~> 0.6.1'
+    # gem 'jekyll-menus', '~> 0.6.1'
     # gem 'jekyll-admin', '~> 0.11.0'
 end
 

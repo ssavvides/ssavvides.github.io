@@ -14,8 +14,8 @@ urls:
   url: /
 - text: Blog
   url: /blog
-- text: Publications
-  url: /publications
+- text: Research & Teaching
+  url: /research
 #- text: Gallery
 #  url: /gallery
 
@@ -72,7 +72,7 @@ plugins:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-menus
+#  - jekyll-menus
 #  - jekyll-admin
 
 # Jekyll Admin Config
