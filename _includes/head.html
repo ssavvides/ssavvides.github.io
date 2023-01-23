@@ -1,113 +1,116 @@
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>
     {% if page.title %}{{ page.title }} - Savvas Savvides{% endif %}
   </title>
-  <meta http-equip="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="IE=edge" http-equip="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
   {% if page.summary %}
-    <meta name="description" content="{{ page.summary | escape }}- {% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+  <meta content="{{ page.summary | escape }}- {% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}"
+        name="description">
   {% endif %}
-   <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"/>
+  <meta content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"
+        name="keywords"/>
 
-  <meta content="{{ site.title }}" property="og:site_name" />
+  <meta content="{{ site.title }}" property="og:site_name"/>
   {% if page.noindex %}
-  <meta name="robots" content="noindex" />
+  <meta content="noindex" name="robots"/>
   {% endif %} {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title" />
-  <meta content="article" property="og:type" />
+  <meta content="{{ page.title }}" property="og:title"/>
+  <meta content="article" property="og:type"/>
   {% else %}
-  <meta content="{{ site.title }}" property="og:title" />
-  <meta content="website" property="og:type" />
+  <meta content="{{ site.title }}" property="og:title"/>
+  <meta content="website" property="og:type"/>
   {% endif %} {% if page.summary %}
-  <meta content="{{ page.summary }}" property="og:description" />
+  <meta content="{{ page.summary }}" property="og:description"/>
   {% else %}
-  <meta content="{{ site.description }}" property="og:description" />
+  <meta content="{{ site.description }}" property="og:description"/>
   {% endif %} {% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url"/>
   {% endif %} {% if page.date %}
   <meta
-    content="{{ page.date | date_to_xmlschema }}"
-    property="article:published_time"
+          content="{{ page.date | date_to_xmlschema }}"
+          property="article:published_time"
   />
-  <meta content="{{ site.url }}/about/" property="article:author" />
+  <meta content="{{ site.url }}/about/" property="article:author"/>
   {% endif %} {% if page.thumbnail %}
-  <meta content="{{ site.url }}{{ page.thumbnail }}" property="og:image" />
+  <meta content="{{ site.url }}{{ page.thumbnail }}" property="og:image"/>
   {% endif %} {% if page.categories %} {% for category in page.categories
   limit:1 %}
-  <meta content="{{ category }}" property="article:section" />
+  <meta content="{{ category }}" property="article:section"/>
   {% endfor %} {% endif %} {% if page.tags %} {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag" />
+  <meta content="{{ tag }}" property="article:tag"/>
   {% endfor %} {% endif %}
 
   <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.share.twitter_username }}" />
-  <meta name="twitter:creator" content="@{{ site.share.twitter_username }}" />
+  <meta content="summary" name="twitter:card"/>
+  <meta content="@{{ site.share.twitter_username }}" name="twitter:site"/>
+  <meta content="@{{ site.share.twitter_username }}" name="twitter:creator"/>
 
   {% if page.title %}
-  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta content="{{ page.title }}" name="twitter:title"/>
   {% else %}
-  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta content="{{ site.title }}" name="twitter:title"/>
   {% endif %}
 
   {% if page.url %}
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+  <meta content="{{ site.url }}{{ page.url }}" name="twitter:url"/>
   {% endif %} {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}" />
+  <meta content="{{ page.summary }}" name="twitter:description"/>
   {% else %}
-  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta content="{{ site.description }}" name="twitter:description"/>
   {% endif %} {% if page.header-img %}
   <meta
-    name="twitter:image:src"
-    content="{{ site.url }}{{ page.thumbnail }}"
+          content="{{ site.url }}{{ page.thumbnail }}"
+          name="twitter:image:src"
   />
   {% endif %}
 
-  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/main.css" />
-  <!-- <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/custom-style.css" /> -->
+  <link href="{{site.url}}{{site.baseurl}}/assets/css/main.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/style.css" />
   <link
-    rel="stylesheet"
-    href="{{site.url}}{{site.baseurl}}/assets/bower_components/lightgallery/dist/css/lightgallery.min.css"
+          href="{{site.url}}{{site.baseurl}}/assets/bower_components/lightgallery/dist/css/lightgallery.min.css"
+          rel="stylesheet"
   />
   <link
-    rel="stylesheet"
-    href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css"
+          href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css"
+          rel="stylesheet"
   />
   <link
-    rel="stylesheet"
-    href="{{site.url}}{{site.baseurl}}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css"
+          href="{{site.url}}{{site.baseurl}}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css"
+          rel="stylesheet"
   />
   <link
-    rel="stylesheet"
-    href="{{site.url}}{{site.baseurl}}/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css"
+          href="{{site.url}}{{site.baseurl}}/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css"
+          rel="stylesheet"
   />
   <link
-    rel="stylesheet"
-    href="{{site.url}}{{site.baseurl}}/assets/bower_components/icono/dist/icono.min.css"
+          href="{{site.url}}{{site.baseurl}}/assets/bower_components/icono/dist/icono.min.css"
+          rel="stylesheet"
   />
   <!-- Fonts-->
   <link
-    href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
-    rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+          rel="stylesheet"
   />
   <!-- Favicon -->
   <link
-    rel="icon"
-    href="{{site.url}}{{site.baseurl}}/assets/img/favicon.png"
-    type="image/png"
-    sizes="16x16"
+          href="{{site.url}}{{site.baseurl}}/assets/img/favicon.png"
+          rel="icon"
+          sizes="16x16"
+          type="image/png"
   />
 
   <script>
     var base_url = '{{ site.url}}{{site.baseurl}}' ;
+
   </script>
 
   <!-- Jquery -->
   <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
-    crossorigin="anonymous"
+          crossorigin="anonymous"
+          integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
   ></script>
   <!-- <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery/dist/jquery.min.js"></script> -->
   <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery.easing/jquery.easing.min.js"></script>
@@ -122,22 +125,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
- <!-- for Mathjax support -->
+  <!-- for Mathjax support -->
   {% if page.usemathjax %}
-   <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
       TeX: { equationNumbers: { autoNumber: "AMS" } }
       });
-   </script>
-   <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </script>
+  <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+          type="text/javascript"></script>
   {% endif %}
 
   <!-- Github Button -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"
+          crossorigin="anonymous"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
   ></script>
 
   <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

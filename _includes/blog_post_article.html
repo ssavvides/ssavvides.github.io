@@ -30,24 +30,3 @@
 <div class="card">
   <a href="{% link blog/index.html %}">← Back to blog</a>
 </div>
-
-<button onclick="toTopFunction()" class="hoverButton btn btn-lg btn-default" title="Go to top">↑ Back to top</button>
-
-<style>
-    .hoverButton {
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-    }
-    .hoverButton:focus {
-        box-shadow: none;
-    }
-</style>
-
-<script>
-  function toTopFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
