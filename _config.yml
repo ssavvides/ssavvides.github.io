@@ -1,5 +1,6 @@
 title: Savvas Savvides, Ph.D.
-subtitle: Senior Software Engineer, Fortanix
+#subtitle: Senior Software Engineer, Fortanix
+subtitle: Software Engineer
 #subtitle2: Special Scientist (Researcher), University of Cyprus (UCY)
 #subtitle3: Adjunct Researcher, Università della Svizzera italiana (USI)
 #subtitle4: Scientific Collaborator, European University Cyprus (EUC)
@@ -33,7 +34,7 @@ author_website_url: "https://ssavvides.github.io/"
 twitter_username: sa_savvides
 github_username: ssavvides
 #facebook_username: johndoe
-linkedin_username: ssavvides
+#linkedin_username: ssavvides
 #behance_username: johndoe
 #instagram_username: johndoe
 #medium_username: johndoe
