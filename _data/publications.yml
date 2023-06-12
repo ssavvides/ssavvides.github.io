@@ -1,5 +1,17 @@
 publications:
 
+  - authors: Shamiek Mangipudi, Pavel Chuprikov, Patrick Eugster, Malte Viering, and <strong>Savvas Savvides</strong>
+    title: "Generalized Policy-Based Noninterference for Efficient Confidentiality-Preservation"
+    link: https://dl.acm.org/doi/10.1145/3591231
+    venue: 44th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2023)
+    publication-date: 2023
+
+  - authors: Shamiek Mangipudi, Pavel Chuprikov, Patrick Eugster, Malte Viering, and <strong>Savvas Savvides</strong>
+    title: "Generalized Policy-Based Noninterference for Efficient Confidentiality-Preservation (Technical Report)"
+    link: /assets/research/hydra_tech_report.pdf
+    venue: Technical report
+    publication-date: 2023
+
   - authors: Jethro Beekman, <strong>Savvas Savvides</strong>, Richard Searle, and Ambuj Kumar
     title: "Confidential Computing Workflows"
     link: https://patents.justia.com/patent/11481515
